@@ -1,0 +1,40 @@
+CRITICAL - 2025-02-07 14:17:13 --> Error: Undefined constant "facts_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 4 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-07 14:17:18 --> Error: Undefined constant "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 4 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-07 14:17:49 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

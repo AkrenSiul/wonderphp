@@ -1,0 +1,126 @@
+CRITICAL - 2025-02-08 07:56:41 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 07:58:17 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 07:58:42 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 07:59:06 --> ErrorException: Undefined array key "id_facts"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_facts"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 07:59:21 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 08:09:33 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 08:09:36 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 08:09:39 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/3]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 08:17:02 --> ErrorException: Undefined array key "fact_text"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 24.
+ 1 APPPATH\Views\frontend\wonder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_text"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
