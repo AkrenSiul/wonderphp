@@ -16,7 +16,7 @@ class Wonders extends BaseController
 
         $data = [
             'wonders' => $wonder_model->findAll(),
-            'title' => 'Seven Wonders',
+            'title' => 'Wonders of the Ancient World',
         ];
 
 //            $data = [
@@ -40,10 +40,14 @@ class Wonders extends BaseController
         $wonder_model = model(WondersModel::class);
         $facts_model = model(FactsModel::class);
 
+        $data['wonders'] = $wonder_model->findAll();
+
         $data['wonder_selected'] = $wonder_model->where(['id' => $id_wonder])->first();
 
         // Obtener los facts de la maravilla $id_wonder
         $data['wonder_facts'] = $facts_model->where(['wonder_id' => $id_wonder])->find();
+
+        $data['title'] = 'Wonders of the Ancient World';
 
             return view('frontend/header')
             .view('frontend/wonder', $data)

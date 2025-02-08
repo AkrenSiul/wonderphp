@@ -1,34 +1,56 @@
 <main>
     <div class="container">
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light"><?= esc($title)?></h1>
+                    <br>
+                    <h4 class="text-body-secondary">
+                        Choose a Wonder to discover its facts
+                    </h4>
+                </div>
+                <?php if ($wonders !== []): ?>
+
+                <div>
+                    <p>
+                        <?php foreach ($wonders as $new_wonder): ?>
+                            <a href="<?= base_url('frontend/wonder/').$new_wonder['id'];?>"
+                               class="btn btn-primary my-2"><?= esc($new_wonder['wonder'])?></a>
+                        <?php endforeach?>
+                    </p>
+                    <p>
+                        <a href="<?= base_url('/');?>" class="btn btn-outline-primary my-2">Mostrar todas</a>
+                    </p>
+                </div>
+                <?php endif ?>
+            </div>
+        </section>
+
 
         <?php if ($wonder_selected !== []): ?>
+        <div class="row mb-2">
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-                <div class="card shadow-sm">
-                    <!--                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"-->
-                    <!--                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"-->
-                    <!--                             preserveAspectRatio="xMidYMid slice" focusable="false">-->
-                    <!--                            <title>Placeholder</title>-->
-                    <!--                            <rect width="100%" height="100%" fill="#55595c"/>-->
-                    <!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>-->
-                    <!--                            --><?php //= base_url('assets/img/'.$new_wonder['image'])?>
-                    <!--                        </svg>-->
-                    <a href="">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+            <div class="col-md-12">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-auto d-none d-lg-block">
+                        <img  width="400px" height="250px"
                              src="<?= base_url('assets/img/'.$wonder_selected['image'])?>"
-                             alt ="<?= $wonder_selected['wonder']?>">
-                    </a>
-
-                    <div class="card-body">
-                        <?php foreach($wonder_facts as $fact): ?>
-                        <p class="card-text"><?= $fact['fact_text'];?></p>
-                        <?php endforeach?>
+                             alt ="<?php esc($wonder_selected['wonder'])?>">
                     </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis"><?= $wonder_selected['location']?></strong>
+                        <h3 class="mb-0"><?= $wonder_selected['wonder']?></h3>
+                        <br>
+                        <h5>FACTS</h5>
+                        <?php foreach($wonder_facts as $fact):?>
+                        <p class="mb-auto"><?= $fact['fact_text']?></p>
+                        <?php endforeach ?>
+
+                    </div>
+
                 </div>
             </div>
-            <?php else: ?>
-            <?php endif ?>
         </div>
+        <?php endif ?>
     </div>
 </main>

@@ -124,3 +124,139 @@ in APPPATH\Views\frontend\wonder.php on line 24.
  9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 10:50:34 --> ErrorException: Undefined variable $title
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 5.
+ 1 APPPATH\Views\frontend\wonder.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(49): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 10:51:30 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 68.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 3 APPPATH\Controllers\Wonders.php(51): view('frontend/wonder', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 10:51:53 --> ErrorException: Undefined variable $wonders
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 11.
+ 1 APPPATH\Views\frontend\wonder.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $wonders', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(51): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 10:52:29 --> ErrorException: Undefined variable $wonders
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 15.
+ 1 APPPATH\Views\frontend\wonder.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $wonders', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(51): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 10:52:38 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 16.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 4 APPPATH\Controllers\Wonders.php(51): view('frontend/wonder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 10:57:01 --> ErrorException: Undefined variable $wonders
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 11.
+ 1 APPPATH\Views\frontend\wonder.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $wonders', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(51): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 10:57:59 --> ErrorException: Undefined variable $wonders
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 11.
+ 1 APPPATH\Views\frontend\wonder.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $wonders', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(51): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 10:58:04 --> ErrorException: Undefined variable $wonders
+[Method: GET, Route: frontend/wonder/1]
+in APPPATH\Views\frontend\wonder.php on line 11.
+ 1 APPPATH\Views\frontend\wonder.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $wonders', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(51): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 11:31:15 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: frontend/wonder/3]
+in APPPATH\Views\frontend\wonder.php on line 46.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 4 APPPATH\Controllers\Wonders.php(53): view('frontend/wonder', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('3')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-08 11:32:23 --> ErrorException: Undefined array key "fact_texts"
+[Method: GET, Route: frontend/wonder/3]
+in APPPATH\Views\frontend\wonder.php on line 46.
+ 1 APPPATH\Views\frontend\wonder.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fact_texts"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php', 46)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\wonder.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/wonder', [], true)
+ 5 APPPATH\Controllers\Wonders.php(53): view('frontend/wonder', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->show('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

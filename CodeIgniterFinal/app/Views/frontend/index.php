@@ -4,17 +4,18 @@
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light"><?= esc($title)?></h1>
-                <h5 class="text-body-secondary">
+                <br>
+                <h4 class="text-body-secondary">
                     Choose a Wonder to discover its facts
-                </h5>
+                </h4>
             </div>
             <?php if ($wonders !== []): ?>
 
             <div>
                 <p>
-                    <?php foreach ($wonders as $new_wonder): ?>
-                    <a href="<?= base_url('frontend/wonder/').$new_wonder['id'];?>"
-                       class="btn btn-primary my-2"><?= esc($new_wonder['wonder'])?></a>
+                    <?php foreach ($wonders as $wonder): ?>
+                    <a href="<?= base_url('frontend/wonder/').$wonder['id'];?>"
+                       class="btn btn-primary my-2"><?= esc($wonder['wonder'])?></a>
                     <?php endforeach?>
                 </p>
                 <p>
