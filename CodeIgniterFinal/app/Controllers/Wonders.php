@@ -34,6 +34,7 @@ class Wonders extends BaseController
 
     }
 
+
     public function show($id_wonder) {
 
         //Obtener maravilla del id dado
@@ -53,6 +54,81 @@ class Wonders extends BaseController
             .view('frontend/wonder', $data)
             .view('frontend/footer');
 
+    }
+    public function new()
+    {
+        $session = session();
+        if(empty($session->get('user'))){
+            return redirect()->to(base_url('/'));
+        }
+        helper('form');
+        $model_wonder = model(WondersModel::class);
+
+        if($data['wonder'] = $model_wonder->findAll()){
+            return view('templates/header', ['title' => 'Create a new wonder'])
+                . view('frontend/create',$data)
+                . view('templates/footer');
+        }
+    }
+    public function create()
+    {
+        helper('form');
+
+
+        $data = $this->request->getPost(['wonder', 'location', 'image']);
+
+        // Checks whether the submitted data passed the validation rules.
+        if (! $this->validateData($data, [
+            'wonder' => 'required|max_length[100]|min_length[3]',
+            'location'  => 'required|max_length[100]|min_length[4]',
+            'image' => 'required',
+        ])) {
+            // The validation fails, so returns the form.
+            return $this->new();
+        }
+
+        // Gets the validated data.
+        $post = $this->validator->getValidated();
+
+        $model = model(WondersModel::class);
+
+
+        $model->save([
+            'wonder' => $post['wonder'],
+            'location'  => $post['location'],
+            'image' => $post['image'],
+        ]);
+
+        /*return view('templates/header', ['title' => 'Create a news item'])
+            . view('news/success')
+            . view('templates/footer');
+        */
+
+        // Redirecciona a la url base_url('news');
+        return redirect()->to(base_url('/'));
+    }
+
+    public function delete($id)
+    {
+        if ($id == null){
+            throw new PageNotFoundException('Cannot delete the item');
+        }
+
+        $model = model(WondersModel::class);
+
+         if($model->where('id',$id)->find())
+         {
+             $model->where('id',$id)->delete();
+         }else {
+             throw new PageNotFoundException('Selected item does not exist in database');
+         }
+
+
+        /*return view('templates/header', ['title' => 'Create a news item'])
+            . view('news/success')
+            . view('templates/footer');
+        */
+        return redirect()->to(base_url('/'));
     }
 
 }
