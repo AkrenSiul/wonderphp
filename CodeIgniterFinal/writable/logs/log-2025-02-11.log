@@ -507,3 +507,393 @@ INFO - 2025-02-11 17:52:21 --> CSRF token verified.
 INFO - 2025-02-11 17:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-02-11 17:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-02-11 17:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-11 18:34:45 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:36:41 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:37:25 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:38:08 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:38:11 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: frontend/new]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:38:21 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:38:24 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:39:31 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:43:04 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:43:04 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:43:05 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:43:05 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:43:07 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1598.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/facts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'admin/facts', [...], null)
+ 3 APPPATH\Config\Routes.php(33): CodeIgniter\Router\RouteCollection->get('facts', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 6 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Config\\Routes.php')
+ 7 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-11 18:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 18:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 18:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 18:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-11 18:47:22 --> mysqli_sql_exception: Table 'maravillas.maravillas' doesn't exist in C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\app\Controllers\FactsController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\CodeIgniter.php(933): App\Controllers\FactsController->index()
+#8 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactsController))
+#9 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-02-11 18:47:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'maravillas.maravillas' doesn't exist
+[Method: GET, Route: admin/facts]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `facts`
+JOIN `maravillas` ON `7wonders`.`id`=`facts`.`wonder_id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\FactsController.php(18): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FactsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactsController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:47:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'maravillas.maravillas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `facts`
+JOIN `maravillas` ON `7wonders`.`id`=`facts`.`wonder_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `facts`
+JOIN `maravillas` ON `7wonders`.`id`=`facts`.`wonder_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `facts`
+JOIN `maravillas` ON `7wonders`.`id`=`facts`.`wonder_id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\FactsController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FactsController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactsController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:47:22 --> [Caused by] mysqli_sql_exception: Table 'maravillas.maravillas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `facts`
+JOIN `maravillas` ON `7wonders`.`id`=`facts`.`wonder_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `facts`
+JOIN `maravillas` ON `7wonders`.`id`=`facts`.`wonder_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `facts`
+JOIN `maravillas` ON `7wonders`.`id`=`facts`.`wonder_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `facts`
+JOIN `maravillas` ON `7wonders`.`id`=`facts`.`wonder_id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\FactsController.php(18): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FactsController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactsController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-11 18:47:50 --> mysqli_sql_exception: Not unique table/alias: 'facts' in C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\app\Controllers\FactsController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\CodeIgniter.php(933): App\Controllers\FactsController->index()
+#8 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactsController))
+#9 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\PracticaFinal\CodeIgniterFinal\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-02-11 18:47:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'facts'
+[Method: GET, Route: admin/facts]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `facts`
+JOIN `facts` ON `7wonders`.`id`=`facts`.`wonder_id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\FactsController.php(18): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FactsController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactsController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:47:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'facts'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `facts`
+JOIN `facts` ON `7wonders`.`id`=`facts`.`wonder_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `facts`
+JOIN `facts` ON `7wonders`.`id`=`facts`.`wonder_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `facts`
+JOIN `facts` ON `7wonders`.`id`=`facts`.`wonder_id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\FactsController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FactsController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactsController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-11 18:47:50 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'facts'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `facts`
+JOIN `facts` ON `7wonders`.`id`=`facts`.`wonder_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `facts`
+JOIN `facts` ON `7wonders`.`id`=`facts`.`wonder_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `facts`
+JOIN `facts` ON `7wonders`.`id`=`facts`.`wonder_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `facts`
+JOIN `facts` ON `7wonders`.`id`=`facts`.`wonder_id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\FactsController.php(18): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FactsController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FactsController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-11 18:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-11 19:21:36 --> ErrorException: Undefined variable $fact
+[Method: GET, Route: admin/wonders]
+in APPPATH\Views\backend\wonders\index.php on line 17.
+ 1 APPPATH\Views\backend\wonders\index.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fact', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\index.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backend/wonders/index.php', [], true)
+ 5 APPPATH\Controllers\Wonders.php(33): view('backend/wonders/index.php')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->index('backend')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-11 19:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-11 19:30:42 --> ErrorException: Undefined variable $news_item
+[Method: GET, Route: admin/wonders]
+in APPPATH\Views\backend\wonders\index.php on line 14.
+ 1 APPPATH\Views\backend\wonders\index.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $news_item', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\index.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backend/wonders/index.php', [], true)
+ 5 APPPATH\Controllers\Wonders.php(33): view('backend/wonders/index.php')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->index('backend')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-11 19:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-11 19:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
