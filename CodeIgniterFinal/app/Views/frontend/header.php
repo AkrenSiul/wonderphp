@@ -109,7 +109,8 @@
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4>Contact</h4>
                     <ul class="list-unstyled">
-                        <li><a href="<?=base_url('admin/loginForm')?>" class="text-white">Acceso Privado</a></li>
+                        <li><a href="<?=base_url('admin/loginForm')?>" class="text-white">Acceso Privado</a>
+                        </li>
                     </ul>
                 </div>
             </div>

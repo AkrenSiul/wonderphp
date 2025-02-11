@@ -25,7 +25,7 @@
 </section>
 
 <section>
-    <a href="<?= base_url('users/new');?>">
+    <a href="<?= base_url('admin/registerForm');?>">
         Add User
     </a>
 

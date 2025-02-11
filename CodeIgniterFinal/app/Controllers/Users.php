@@ -80,11 +80,12 @@ class Users extends BaseController
         helper('form');
         helper('password');
 
-        $data = $this->request->getPost(['username', 'password', 'rol']);
+        $data = $this->request->getPost(['username', 'password', 'rol', 'email']);
         if (! $this->validateData($data, [
             'username' => 'required|max_length[255]|min_length[4]',
             'password' => 'required|max_length[255]|min_length[4]',
             'rol' => 'required',
+            'email' => 'required',
         ])) {
             return $this->new();
         }
@@ -100,8 +101,9 @@ class Users extends BaseController
             'username' => $post['username'],
             'password' => $hashedPassword,
             'rol' => $post['rol'],
+            'email' => $post['email'],
         ]);
 
-        return redirect()->to(base_url('news'));
+        return redirect()->to(base_url('/'));
     }
 }
