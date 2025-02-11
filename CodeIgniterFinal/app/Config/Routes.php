@@ -17,4 +17,6 @@ $routes->group("admin", function ($routes) {
     $routes->get('loginForm', [Users::class, 'loginForm']);
     $routes->get('registerForm', [Users::class, 'new']);
     $routes->post('create', [Users::class, 'create']);
+    $routes->post('login', [Users::class, 'checkUser']);
+    $routes->get('session', [Users::class, 'closeSession']);
 });

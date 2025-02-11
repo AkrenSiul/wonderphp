@@ -218,7 +218,7 @@
 
             <?php $session = session();
             if (! empty($session->get('user'))):?>
-            <li class="menu-item-hidden"><a href="<?= base_url('session') ?>">Cerrar sesión</a></li>
+            <li class="menu-item-hidden"><a href="<?= base_url('admin/session') ?>">Cerrar sesión</a></li>
             <?php endif ?>
 
         </ul>

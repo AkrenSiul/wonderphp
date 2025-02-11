@@ -61,7 +61,7 @@ class Users extends BaseController
         // Eliminar toda la información de la sesión, todas las sesiones
         // $session->destroy();
 
-        return redirect()->to(base_url('news'));
+        return redirect()->to(base_url('/'));
 
     }
 

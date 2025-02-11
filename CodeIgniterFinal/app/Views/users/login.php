@@ -10,7 +10,7 @@
 <h1><?= esc($error)?></h1>
 <br>
 
-<form action="<?= base_url('login')?>" method="post">
+<form action="<?= base_url('admin/login')?>" method="post">
     <?= csrf_field() ?>
 
     <label for="username">Username</label>
