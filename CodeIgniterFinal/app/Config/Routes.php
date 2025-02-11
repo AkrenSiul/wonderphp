@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\Users;
 use App\Controllers\Wonders;
 use CodeIgniter\Router\RouteCollection;
 
@@ -13,5 +14,6 @@ $routes->get('frontend/wonder/(:segment)', [Wonders::class, 'show']);
 
 
 $routes->group("admin", function ($routes) {
+    $routes->get('loginForm', [Users::class, 'loginForm']);
 
 });
