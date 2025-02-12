@@ -1,56 +1,59 @@
-<section>
+<main style="background-color: #dddddd">
 
-    <?php if ($wonders !== []): ?>
+    <section>
 
-        <?php foreach ($wonders as $wonder): ?>
+        <?php if ($wonders !== []): ?>
 
-            <img src="<?= base_url('assets/img/'.$wonder['image']) ?>"
-            width="300" height="150">
+            <?php foreach ($wonders as $wonder): ?>
 
-            <div class="main">
-                <?= esc($wonder['wonder']) ?>
-            </div>
+                <img src="<?= base_url('assets/img/'.$wonder['image']) ?>"
+                     width="300" height="150">
 
-            <a href="<?= base_url('admin/wonder/'. $wonder['id']) ?>">
-                View article
-            </a>
-            &nbsp;
+                <div class="main">
+                    <?= esc($wonder['wonder']) ?>
+                </div>
 
-            <?php
-            $session = session();
-            if(!empty($session->get('user'))) {
-                ?>
-                <a href="<?= base_url('admin/deleteWonder/'.$wonder['id'])?>">
-                    Delete Wonder
+                <a href="<?= base_url('admin/wonder/'. $wonder['id']) ?>">
+                    View article
                 </a>
                 &nbsp;
-                <a href="<?= base_url('admin/updateWonderForm/'.$wonder['id'])?>">
-                    Update Wonder
-                </a>
+
                 <?php
-            }
-            ?>
-            <br>
-        <?php endforeach ?>
+                $session = session();
+                if(!empty($session->get('user'))) {
+                    ?>
+                    <a href="<?= base_url('admin/deleteWonder/'.$wonder['id'])?>">
+                        Delete Wonder
+                    </a>
+                    &nbsp;
+                    <a href="<?= base_url('admin/updateWonderForm/'.$wonder['id'])?>">
+                        Update Wonder
+                    </a>
+                    <?php
+                }
+                ?>
+                <br>
+            <?php endforeach ?>
 
-    <?php else: ?>
+        <?php else: ?>
 
-        <h3>No Wonder</h3>
+            <h3>No Wonder</h3>
 
-        <p>Unable to find any wonder for you.</p>
+            <p>Unable to find any wonder for you.</p>
 
-    <?php endif ?>
-</section>
+        <?php endif ?>
+    </section>
 
-<section>
-    <?php
-    if(!empty($session->get('user'))) {
-        ?>
-        <a href="<?= base_url('admin/createWonderForm')?>">
-            Add New Wonder
-        </a>
+    <section>
         <?php
-    }
-    ?>
+        if(!empty($session->get('user'))) {
+            ?>
+            <a href="<?= base_url('admin/createWonderForm')?>">
+                Add New Wonder
+            </a>
+            <?php
+        }
+        ?>
 
-</section>
+    </section>
+</main>

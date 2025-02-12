@@ -1,16 +1,17 @@
-<section>
+<main style="background-color: #dddddd">
+    <section>
         <h2><?= esc($title) ?></h2>
 
-    <?php if ($facts !== []): ?>
+        <?php if ($facts !== []): ?>
 
-        <?php foreach ($facts as $fact): ?>
+            <?php foreach ($facts as $fact): ?>
 
-            <h3><?= esc($fact['fact_text']) ?></h3>
+                <h3><?= esc($fact['fact_text']) ?></h3>
 
-            <div class="main">
-                <p><b><?= esc($fact['wonder']) ?></b></p>
-            </div>
-        <br>
+                <div class="main">
+                    <p><b><?= esc($fact['wonder']) ?></b></p>
+                </div>
+                <br>
 
                 <?php
                 $session = session();
@@ -26,26 +27,28 @@
                     <?php
                 }
                 ?>
-        <?php endforeach ?>
+            <?php endforeach ?>
 
-    <?php else: ?>
+        <?php else: ?>
 
-        <h3>No Fact</h3>
+            <h3>No Fact</h3>
 
-        <p>Unable to find any fact for you.</p>
+            <p>Unable to find any fact for you.</p>
 
-    <?php endif ?>
-</section>
+        <?php endif ?>
+    </section>
 
-<section>
-    <?php
-    if(!empty($session->get('user'))) {
-        ?>
-        <a href="<?= base_url('admin/createFactForm')?>">
-            Add New Fact
-        </a>
+    <section>
         <?php
-    }
-    ?>
+        if(!empty($session->get('user'))) {
+            ?>
+            <a href="<?= base_url('admin/createFactForm')?>">
+                Add New Fact
+            </a>
+            <?php
+        }
+        ?>
 
-</section>
+    </section>
+</main>
+

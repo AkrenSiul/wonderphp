@@ -9,9 +9,8 @@
 
     <div class="copyrights">
 
-        <em>&copy; 2024</em>
-        <p>&copy; <?= date('Y') ?> CodeIgniter Foundation. CodeIgniter is open source project released under the MIT
-            open source licence.</p>
+        <em>&copy; <?= date('Y') ?></em>
+        <p><b> Acceso Privado de las maravillas del mundo antiguo</b></p>
 
     </div>
 

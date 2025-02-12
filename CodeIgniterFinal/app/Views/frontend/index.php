@@ -1,5 +1,4 @@
-<main>
-
+<main >
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
@@ -11,13 +10,14 @@
             </div>
             <?php if ($wonders !== []): ?>
 
-            <div><?php
+            <div>
+                <?php
                 $session = session();
                 if(empty($session->get('user'))):
                 ?>
                 <p>
                     <?php foreach ($wonders as $wonder): ?>
-                    <a href="<?= base_url('frontend/wonder/').$wonder['id'];?>"
+                    <a href="<?= base_url('wonder/').$wonder['id'];?>"
                        class="btn btn-primary my-2"><?= esc($wonder['wonder'])?></a>
                     <?php endforeach?>
                 </p>
@@ -34,7 +34,12 @@
                 <?php foreach ($wonders as $new_wonder): ?>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <a href="<?= base_url('frontend/wonder/').$new_wonder['id'];?>">
+                        <?php
+                        $session = session();
+                        if(!empty($session->get('user'))):
+                        ?>
+                        <a href="<?= base_url('wonder/').$new_wonder['id'];?>">
+                            <?php endif ?>
                         <img class="bd-placeholder-img card-img-top" width="100%" height="225"
                              src="<?= base_url('assets/img/'.$new_wonder['image'])?>"
                         alt ="<?php esc($new_wonder['wonder'])?>">

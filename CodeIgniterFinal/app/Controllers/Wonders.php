@@ -38,10 +38,7 @@ class Wonders extends BaseController
 
 
     public function show($location, $id_wonder) {
-        $session = session();
-        if(empty($session->get('user'))){
-            return redirect()->to(base_url('admin/loginForm'));
-        }
+
 
         //Obtener maravilla del id dado
         $wonder_model = model(WondersModel::class);
@@ -58,9 +55,13 @@ class Wonders extends BaseController
 
         if($location == 'frontend') {
             return view('frontend/header')
-                . view('frontend/wonder', $data)
+                . view('frontend/wonder.php', $data)
                 . view('frontend/footer');
         }else {
+            $session = session();
+            if(empty($session->get('user'))){
+                return redirect()->to(base_url('admin/loginForm'));
+            }
             return view('templates/header')
                 . view('backend/wonders/view', $data)
                 . view('templates/footer');
