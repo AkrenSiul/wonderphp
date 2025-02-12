@@ -103,8 +103,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
-                    <h4>About</h4>
-                    <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                    <h4>Sobre las maravillas</h4>
+                    <p class="text-body-secondary">Las siete maravillas del mundo conocido por los griegos helenísticos fueron seleccionadas
+                        por el pintor neerlandés Maerten van Heemskrerck en el siglo XVI en una serie de siete cuadros,
+                        que muestran las obras arquitectónicas y escultóricas que marcaron un antes y un después en la historia.</p>
                 </div>
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4>Contact</h4>

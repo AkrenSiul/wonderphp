@@ -1,18 +1,18 @@
 <?php
-
 namespace App\Controllers;
 use App\Models\WondersModel;
 use App\Models\FactsModel;
-
 use CodeIgniter\Exceptions\PageNotFoundException;
 
 class FactsController extends BaseController
 {
     public function index() {
 
+
         $facts_model = model(FactsModel::class);
         $wonders_model = model(WondersModel::class);
 
+        // AQUÍ HAY UN JOIN DE EJEMPLO
 
         $data = [
             'facts' => $facts_model->join('7wonders', '7wonders.id=facts.wonder_id')->findAll(),
@@ -20,21 +20,33 @@ class FactsController extends BaseController
         ];
 
 
-        return view('templates/header.php', $data)
-            . view('backend/facts/index.php')
-            . view('templates/footer.php');
+        return view('templates/header', $data)
+            . view('backend/facts/index')
+            . view('templates/footer');
     }
 
-    public function createForm() {
+    public function createForm()
+    {
         $session = session();
-        if(empty($session->get['user'])) {
-            return redirect()->to(base_url('/admin/facts'));
+        if(empty($session->get('user'))){
+            return redirect()->to(base_url('admin/loginForm'));
         }
+
         helper('form');
+
+        $wonders_model = model(WondersModel::class);
+
+        if($data['wonders'] = $wonders_model->findAll()){
+            return view('templates/header', ['title' => 'Create new fact'])
+                .view('backend/facts/create', $data)
+                .view('templates/footer');
+        }
+
     }
 
     public function createFact()
     {
+
         helper('form');
 
 

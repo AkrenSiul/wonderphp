@@ -1,5 +1,5 @@
 <section>
-    <h2><?= esc($title) ?></h2>
+        <h2><?= esc($title) ?></h2>
 
     <?php if ($facts !== []): ?>
 
@@ -8,18 +8,19 @@
             <h3><?= esc($fact['fact_text']) ?></h3>
 
             <div class="main">
-                <?= esc($fact['wonder']) ?>
+                <p><b><?= esc($fact['wonder']) ?></b></p>
             </div>
+        <br>
 
                 <?php
                 $session = session();
                 if(!empty($session->get('user'))) {
                     ?>
-                    <a href="<?= base_url('admin/deleteFact/'.$fact['id'])?>">
+                    <a href="<?= base_url('admin/deleteFact/'.$fact['fact_id'])?>">
                         Delete Fact
                     </a>
                     &nbsp;
-                    <a href="<?= base_url('admin/updateFactForm/'.$fact['id'])?>">
+                    <a href="<?= base_url('admin/updateFactForm/'.$fact['fact_id'])?>">
                         Update Fact
                     </a>
                     <?php
@@ -40,7 +41,7 @@
     <?php
     if(!empty($session->get('user'))) {
         ?>
-        <a href="<?= base_url('news/new')?>">
+        <a href="<?= base_url('admin/createFactForm')?>">
             Add New Fact
         </a>
         <?php

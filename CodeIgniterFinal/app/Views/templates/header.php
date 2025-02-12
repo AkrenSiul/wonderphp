@@ -212,6 +212,7 @@
             <li class="menu-item hidden"><a href="<?= base_url('/') ?>">Wonders main</a>
             <li class="menu-item hidden"><a href="<?= base_url('admin/wonders') ?>">Wonders</a></li>
             <li class="menu-item hidden"><a href="<?= base_url('admin/facts') ?>">Facts</a>
+            <li class="menu-item hidden"><a href="<?= base_url('admin/loginForm') ?>">Login</a>
 
             <?php $session = session();
             if (! empty($session->get('user'))):?>
@@ -220,8 +221,6 @@
 
         </ul>
     </div>
-
-        <h1><?= esc($title) ?></h1>
 </header>
 
 

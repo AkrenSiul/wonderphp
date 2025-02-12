@@ -37,7 +37,7 @@ class Wonders extends BaseController
     }
 
 
-    public function show($location,$id_wonder) {
+    public function show($location, $id_wonder) {
 
         //Obtener maravilla del id dado
         $wonder_model = model(WondersModel::class);
@@ -52,13 +52,13 @@ class Wonders extends BaseController
 
         $data['title'] = 'Wonders of the Ancient World';
 
-        if($location == 'frontend') {
-            return view('frontend/header')
-                . view('frontend/wonder', $data)
+        if($location === 'frontend') {
+            return view('frontend/header', $data)
+                . view('frontend/wonder')
                 . view('frontend/footer');
         }else {
-            return view('frontend/header')
-                . view('frontend/wonder', $data)
+            return view('frontend/header', $data)
+                . view('backend/wonder')
                 . view('frontend/footer');
         }
 

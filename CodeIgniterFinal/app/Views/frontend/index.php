@@ -41,11 +41,6 @@
                         <div class="card-body">
                             <p class="card-text text-center"><?= esc($new_wonder['wonder'])?></p>
                         </div>
-                        <div class="card-footer">
-                            <a href="<?= base_url('wonders/del/'.$new_wonder['id'])?>">
-                                Delete Wonder
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <?php endforeach?>
@@ -55,9 +50,16 @@
         </div>
     </div>
     <section>
-            <a href="<?= base_url('frontend/new')?>">
-                Add Wonders
+        <?php
+                $session = session();
+        if(!empty($session->get('user'))) {
+            ?>
+            <a href="<?= base_url('news/new')?>">
+                Add New Wonder
             </a>
+            <?php
+        }
+        ?>
 
     </section>
 
