@@ -111,7 +111,7 @@ class FactsController extends BaseController
         // Para rellenar campos del formulario de fact a modificar
         $data['fact'] = $facts_model->where(['fact_id' => $id])->first();
 
-        $data['title'] = 'Updated Facts';
+        $data['title'] = 'Update Fact';
 
         return view('templates/header.php', $data)
             . view('backend/facts/update.php')
