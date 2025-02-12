@@ -5,13 +5,13 @@
         <?php foreach ($wonders as $wonder): ?>
 
             <img src="<?= base_url('assets/img/'.$wonder['image']) ?>"
-            width="100" height="100">
+            width="300" height="150">
 
             <div class="main">
                 <?= esc($wonder['wonder']) ?>
             </div>
 
-            <a href="<?= base_url('news/'. $wonder['wonder']) ?>">
+            <a href="<?= base_url('admin/wonder/'. $wonder['id']) ?>">
                 View article
             </a>
             &nbsp;
@@ -20,12 +20,12 @@
             $session = session();
             if(!empty($session->get('user'))) {
                 ?>
-                <a href="<?= base_url('admin/deleteFact/'.$wonder['id'])?>">
-                    Delete Fact
+                <a href="<?= base_url('admin/deleteWonder/'.$wonder['id'])?>">
+                    Delete Wonder
                 </a>
                 &nbsp;
-                <a href="<?= base_url('admin/updateFactForm/'.$wonder['id'])?>">
-                    Update Fact
+                <a href="<?= base_url('admin/updateWonderForm/'.$wonder['id'])?>">
+                    Update Wonder
                 </a>
                 <?php
             }
@@ -46,7 +46,7 @@
     <?php
     if(!empty($session->get('user'))) {
         ?>
-        <a href="<?= base_url('news/new')?>">
+        <a href="<?= base_url('admin/createWonderForm')?>">
             Add New Wonder
         </a>
         <?php

@@ -11,16 +11,18 @@
             </div>
             <?php if ($wonders !== []): ?>
 
-            <div>
+            <div><?php
+                $session = session();
+                if(empty($session->get('user'))):
+                ?>
                 <p>
                     <?php foreach ($wonders as $wonder): ?>
                     <a href="<?= base_url('frontend/wonder/').$wonder['id'];?>"
                        class="btn btn-primary my-2"><?= esc($wonder['wonder'])?></a>
                     <?php endforeach?>
                 </p>
-                <p>
-                        <a href="<?= base_url('/');?>" class="btn btn-outline-primary my-2">Mostrar todas</a>
-                </p>
+
+                <?php endif;?>
             </div>
         </div>
     </section>
@@ -54,7 +56,7 @@
                 $session = session();
         if(!empty($session->get('user'))) {
             ?>
-            <a href="<?= base_url('news/new')?>">
+            <a href="<?= base_url('frontend/new')?>">
                 Add New Wonder
             </a>
             <?php
