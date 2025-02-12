@@ -24,7 +24,7 @@ class Wonders extends BaseController
 //                'facts_text' => $fact_model->getFacts(),
 //                'title' => 'Seven Wonders',
 //            ];
-        if($location == 'frontend') {
+        if($location === 'frontend') {
             return view('frontend/header.php', $data)
                 . view('frontend/index.php')
                 . view('frontend/footer.php');

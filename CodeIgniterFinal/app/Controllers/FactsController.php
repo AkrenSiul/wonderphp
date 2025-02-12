@@ -50,11 +50,11 @@ class FactsController extends BaseController
         helper('form');
 
 
-        $data = $this->request->getPost(['fact_text', 'wonder_id', ]);
+        $data = $this->request->getPost(['fact_text', 'wonder_id']);
 
         // Checks whether the submitted data passed the validation rules.
         if (! $this->validateData($data, [
-            'fact_text' => 'required|max_length[255]|min_length[3]',
+            'fact_text' => 'required|max_length[100]|min_length[3]',
             'wonder_id' => 'required',
         ])) {
             // The validation fails, so returns the form.
@@ -95,21 +95,26 @@ class FactsController extends BaseController
     }
 
     public function updateForm($id) {
+
         $session = session();
-        if(empty($session->get['user'])) {
-            return redirect()->to(base_url('/admin/facts'));
+        if(empty($session->get('user'))){
+            return redirect()->to(base_url('admin/loginForm'));
         }
         helper('form');
 
         $facts_model = model(FactsModel::class);
         $wonders_model = model(WondersModel::class);
 
+        // Para rellenar el desplegable
         $data['wonders'] = $wonders_model->findAll();
 
+        // Para rellenar campos del formulario de fact a modificar
         $data['fact'] = $facts_model->where(['fact_id' => $id])->first();
 
+        $data['title'] = 'Updated Facts';
+
         return view('templates/header.php', $data)
-            . view('backend/facts/index.php')
+            . view('backend/facts/update.php')
             . view('templates/footer.php');
 
     }
@@ -127,7 +132,7 @@ class FactsController extends BaseController
             'wonder_id' => 'required',
         ])) {
             // The validation fails, so returns the form.
-            return $this->updateForm();
+            return $this->updateForm($id);
         }
 
         // Gets the validated data.
