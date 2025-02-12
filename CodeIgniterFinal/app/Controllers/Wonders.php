@@ -40,7 +40,7 @@ class Wonders extends BaseController
     public function show($location, $id_wonder) {
         $session = session();
         if(empty($session->get('user'))){
-            return redirect()->to(base_url('/'));
+            return redirect()->to(base_url('admin/loginForm'));
         }
 
         //Obtener maravilla del id dado
@@ -124,8 +124,6 @@ class Wonders extends BaseController
 
         return redirect()->to(base_url('admin/wonders'));
     }
-
-
     public function new()
     {
         $session = session();
@@ -204,11 +202,6 @@ class Wonders extends BaseController
             }
         }
 
-
-        /*return view('templates/header', ['title' => 'Create a news item'])
-            . view('news/success')
-            . view('templates/footer');
-        */
         return redirect()->to(base_url('admin/wonders'));
     }
 
@@ -234,5 +227,110 @@ class Wonders extends BaseController
 //        */
 //        return redirect()->to(base_url('/'));
 //    }
+
+    public function updateForm($id)
+    {
+        $session = session();
+        if(empty($session->get('user'))){
+            return redirect()->to(base_url('admin/wonders'));
+        }
+        helper('form');
+
+        if($id == null) {
+            throw new PageNotFoundException('El id no es correcto');
+        }
+
+        $wonders_model = model(WondersModel::class);
+
+
+        if($wonders_model->where('id',$id)->find()){
+            $data = [
+                'wonders' => $wonders_model->getById($id),
+                'title' => 'Update Wonder',
+            ];
+        }else {
+            throw new PageNotFoundException('Wonder no encontrada');
+        }
+        return view('templates/header',$data)
+            . view('backend/wonders/update')
+            . view('templates/footer');
+
+    }
+
+    public function updateWonder($id)
+    {
+        helper('form');
+
+        if(empty($_FILES['image']['name'])){
+            // Mantener imagen de la base de datos
+
+            $data = $this->request->getPost(['wonder', 'location', 'img_wonder']);
+
+            // Checks whether the submitted data passed the validation rules.
+            if (! $this->validateData($data, [
+                'wonder' => 'required|max_length[255]|min_length[3]',
+                'location'  => 'required|max_length[100]|min_length[2]',
+                'img_wonder' => 'max_length[80]|min_length[1]',
+            ])) {
+                // The validation fails, so returns the form.
+                return $this->updateForm($id);
+            }
+
+            $wonders_model = model(WondersModel::class);
+            // Gets the validated data.
+            $post = $this->validator->getValidated();
+
+            $wonders_model->save([
+                'id' => $id,
+                'wonder' => $post['wonder'],
+                'location'  => $post['location'],
+                'image' => $post['img_wonder'],
+            ]);
+
+            return redirect()->to(base_url('admin/wonders'));
+
+        }else {
+            // Si pulsamos el botón examinar (cargar img nueva)
+            $data = $this->request->getPost(['wonder', 'location', 'image']);
+
+            // Checks whether the submitted data passed the validation rules.
+            if (! $this->validateData($data, [
+                'wonder' => 'required|max_length[255]|min_length[3]',
+                'location'  => 'required|max_length[100]|min_length[2]',
+                'image' => 'is_image[image]',
+            ])) {
+                // The validation fails, so returns the form.
+                return $this->updateForm($id);
+            }
+
+            // Gets the validated data.
+            $post = $this->validator->getValidated();
+
+            $wonders_model = model(WondersModel::class);
+
+            // Recoger archivo temporal
+            $file = $this->request->getFile('image');
+            // Obtenemos el nombre
+            $news_wonder_image = $file->getName();
+            // Mover el archivo temporal a la ruta
+            $file->move(ROOTPATH.'public/assets/img/',$news_wonder_image);
+
+            // Eliminamos la imagen anterior para subir la nueva
+            if($data['image'] = $wonders_model->where('id',$id)->findColumn('image'))
+            {
+                unlink(ROOTPATH.'public/assets/img/'.$data['image'][0]);
+            }
+
+            $wonders_model->save([
+                'id' => $id,
+                'wonder' => $post['wonder'],
+                'location'  => $post['location'],
+                'image' => $news_wonder_image,
+            ]);
+
+            return redirect()->to(base_url('admin/wonders'));
+
+        }
+    }
 
 }

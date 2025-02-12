@@ -1219,3 +1219,163 @@ WARNING - 2025-02-12 12:05:02 --> [DEPRECATED] Setting lowercase HTTP method key
 INFO - 2025-02-12 12:05:02 --> CSRF token verified.
 INFO - 2025-02-12 12:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-02-12 12:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-12 12:26:50 --> ErrorException: Undefined variable $news
+[Method: GET, Route: admin/updateWonderForm/6]
+in APPPATH\Views\backend\wonders\update.php on line 7.
+ 1 APPPATH\Views\backend\wonders\update.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $news', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\update.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\update.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backend/wonders/update', [], true)
+ 5 APPPATH\Controllers\Wonders.php(255): view('backend/wonders/update')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->updateForm('6')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-12 12:27:56 --> ErrorException: Undefined variable $news
+[Method: GET, Route: admin/updateWonderForm/3]
+in APPPATH\Views\backend\wonders\update.php on line 7.
+ 1 APPPATH\Views\backend\wonders\update.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $news', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\update.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\update.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backend/wonders/update', [], true)
+ 5 APPPATH\Controllers\Wonders.php(255): view('backend/wonders/update')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->updateForm('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-12 12:28:01 --> ErrorException: Undefined variable $news
+[Method: GET, Route: admin/updateWonderForm/3]
+in APPPATH\Views\backend\wonders\update.php on line 7.
+ 1 APPPATH\Views\backend\wonders\update.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $news', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\update.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\backend\\wonders\\update.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backend/wonders/update', [], true)
+ 5 APPPATH\Controllers\Wonders.php(255): view('backend/wonders/update')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wonders->updateForm('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wonders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-12 12:38:59 --> [DEPRECATED] Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH\Filters\Filters.php on line 651.
+ 1 SYSTEMPATH\Filters\Filters.php(651): trigger_error('Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 SYSTEMPATH\Filters\Filters.php(399): CodeIgniter\Filters\Filters->processMethods()
+ 3 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('admin/updatewonder/1')
+ 4 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('admin/updateWonder/1', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:38:59 --> CSRF token verified.
+INFO - 2025-02-12 12:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-12 12:39:11 --> [DEPRECATED] Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH\Filters\Filters.php on line 651.
+ 1 SYSTEMPATH\Filters\Filters.php(651): trigger_error('Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 SYSTEMPATH\Filters\Filters.php(399): CodeIgniter\Filters\Filters->processMethods()
+ 3 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('admin/updatewonder/1')
+ 4 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('admin/updateWonder/1', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:39:11 --> CSRF token verified.
+INFO - 2025-02-12 12:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-12 12:39:22 --> [DEPRECATED] Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH\Filters\Filters.php on line 651.
+ 1 SYSTEMPATH\Filters\Filters.php(651): trigger_error('Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 SYSTEMPATH\Filters\Filters.php(399): CodeIgniter\Filters\Filters->processMethods()
+ 3 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('admin/updatewonder/1')
+ 4 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('admin/updateWonder/1', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:39:22 --> CSRF token verified.
+INFO - 2025-02-12 12:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-12 12:39:42 --> [DEPRECATED] Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH\Filters\Filters.php on line 651.
+ 1 SYSTEMPATH\Filters\Filters.php(651): trigger_error('Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 SYSTEMPATH\Filters\Filters.php(399): CodeIgniter\Filters\Filters->processMethods()
+ 3 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('admin/createwonder')
+ 4 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('admin/createWonder', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:39:42 --> CSRF token verified.
+INFO - 2025-02-12 12:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-12 12:40:15 --> [DEPRECATED] Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH\Filters\Filters.php on line 651.
+ 1 SYSTEMPATH\Filters\Filters.php(651): trigger_error('Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 SYSTEMPATH\Filters\Filters.php(399): CodeIgniter\Filters\Filters->processMethods()
+ 3 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('admin/updatewonder/12')
+ 4 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('admin/updateWonder/12', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:40:15 --> CSRF token verified.
+INFO - 2025-02-12 12:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-12 12:40:51 --> [DEPRECATED] Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH\Filters\Filters.php on line 651.
+ 1 SYSTEMPATH\Filters\Filters.php(651): trigger_error('Setting lowercase HTTP method key "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 SYSTEMPATH\Filters\Filters.php(399): CodeIgniter\Filters\Filters->processMethods()
+ 3 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('admin/updatewonder/12')
+ 4 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('admin/updateWonder/12', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-12 12:40:51 --> CSRF token verified.
+INFO - 2025-02-12 12:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-12 12:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

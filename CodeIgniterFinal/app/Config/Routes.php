@@ -43,10 +43,11 @@ $routes->group("admin", function ($routes) {
     $routes->get('wonders', [Wonders::class, 'index/backend']);
     $routes->get('wonder/(:segment)', [Wonders::class, 'show/backend']);
     $routes->get('deleteWonder/(:segment)', [Wonders::class, 'delete']);
-    $routes->get('deleteWonder/(:segment)', [Wonders::class, 'delete']);
     // Insertar formulario Wonder
     $routes->get('createWonderForm', [Wonders::class, 'createForm']);
     // Crear nuevo Wonder
     $routes->post('createWonder', [Wonders::class, 'createWonder']);
+    $routes->get('updateWonderForm/(:segment)', [Wonders::class, 'updateForm']);
+    $routes->post('updateWonder/(:segment)', [Wonders::class, 'updateWonder']);
 });
 
