@@ -17,7 +17,7 @@
                 ?>
                 <p>
                     <?php foreach ($wonders as $wonder): ?>
-                    <a href="<?= base_url('frontend/wonder/').$wonder['id'];?>"
+                    <a href="<?= base_url('wonder/').$wonder['id'];?>"
                        class="btn btn-primary my-2"><?= esc($wonder['wonder'])?></a>
                     <?php endforeach?>
                 </p>

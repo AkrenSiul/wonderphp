@@ -209,7 +209,6 @@
             <li class="menu-toggle">
                 <button id="menuToggle">&#9776;</button>
             </li>
-            <li class="menu-item hidden"><a href="<?= base_url('/') ?>">Wonders main</a>
             <li class="menu-item hidden"><a href="<?= base_url('admin/wonders') ?>">Wonders</a></li>
             <li class="menu-item hidden"><a href="<?= base_url('admin/facts') ?>">Facts</a>
             <li class="menu-item hidden"><a href="<?= base_url('admin/loginForm') ?>">Login</a>
