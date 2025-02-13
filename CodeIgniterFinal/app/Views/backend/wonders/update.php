@@ -24,6 +24,7 @@
                 <input type="hidden" name="img_wonder" value="<?= $wonders['image']?>">
                 <br>
                 <br>
+                <br>
                 <label for="image">New image</label>
                 <input type="file" name="image">
                 <br>

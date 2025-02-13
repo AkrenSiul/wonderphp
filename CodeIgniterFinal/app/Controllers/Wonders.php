@@ -330,7 +330,6 @@ class Wonders extends BaseController
             ]);
 
             return redirect()->to(base_url('admin/wonders'));
-
         }
     }
 

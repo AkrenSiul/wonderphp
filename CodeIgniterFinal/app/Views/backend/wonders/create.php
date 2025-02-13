@@ -15,6 +15,8 @@
             <input type="input" name="location" value="<?= set_value('location') ?>">
             <br>
             <label for="image">Image</label>
+            <br>
+            <br>
             <input type="file" name="image">
             <br>
             <br>
