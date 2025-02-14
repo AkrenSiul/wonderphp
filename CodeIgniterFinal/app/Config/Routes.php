@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\FactsController;
+use App\Controllers\Libros;
 use App\Controllers\Users;
 use App\Controllers\Wonders;
 use CodeIgniter\Router\RouteCollection;
@@ -18,6 +19,10 @@ $routes->post('wonders/create', [Wonders::class, 'create']);
 // Eliminar Wonder
 $routes->get('wonders/del/(:segment)', [Wonders::class, 'delete']);
 $routes->get('frontend/wonder/(:segment)', [Wonders::class, 'show']);
+
+// LIBROS
+
+$routes->get('libros', [Libros::class, 'index/frontend']);
 
 
 

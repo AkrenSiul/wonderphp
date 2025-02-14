@@ -1,0 +1,23 @@
+INFO - 2025-02-14 07:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 07:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 07:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 07:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 07:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 07:35:45 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: libros]
+in APPPATH\Views\frontend\libros\index.php on line 19.
+ 1 APPPATH\Views\frontend\libros\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\libros\\index.php', 19)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\PracticaFinal\\CodeIgniterFinal\\app\\Views\\frontend\\libros\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('frontend/libros/index.php', [], true)
+ 5 APPPATH\Controllers\Libros.php(21): view('frontend/libros/index.php')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Libros->index('frontend')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-14 07:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 07:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 07:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 07:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
