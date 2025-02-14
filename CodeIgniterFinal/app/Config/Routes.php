@@ -23,6 +23,7 @@ $routes->get('frontend/wonder/(:segment)', [Wonders::class, 'show']);
 // LIBROS
 
 $routes->get('libros', [Libros::class, 'index/frontend']);
+$routes->get('libros/(:segment)', [Libros::class, 'show/frontend']);
 
 
 
@@ -54,5 +55,9 @@ $routes->group("admin", function ($routes) {
     $routes->post('createWonder', [Wonders::class, 'createWonder']);
     $routes->get('updateWonderForm/(:segment)', [Wonders::class, 'updateForm']);
     $routes->post('updateWonder/(:segment)', [Wonders::class, 'updateWonder']);
+
+
+    // LIBROS BACKEND
+    $routes->get('libros', [Libros::class, 'index/backend']);
 });
 

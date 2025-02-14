@@ -16,7 +16,7 @@
                 <div class="col">
                     <div class="card shadow-sm">
 
-                        <a href="<?= base_url('wonder/').$new_libro['id_libro'];?>">
+                        <a href="<?= base_url('libros/').$new_libro['id_libro'];?>">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="225"
                                  src="<?= base_url('assets/img/'.$new_libro['portada'])?>"
                                  alt ="<?php esc($new_libro['titulo'])?>">
