@@ -64,5 +64,7 @@ $routes->group("admin", function ($routes) {
     $routes->get('createBookForm', [Libros::class, 'createForm']);
     $routes->post('createBook', [Libros::class, 'createBook']);
     $routes->get('deleteBook/(:segment)', [Libros::class, 'delete']);
+    $routes->get('updateBookForm/(:segment)', [Libros::class, 'updateForm']);
+    $routes->post('updateBook/(:segment)', [Libros::class, 'updateBook']);
 });
 

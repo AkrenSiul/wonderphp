@@ -135,4 +135,113 @@ class Libros extends BaseController
         return redirect()->to(base_url('admin/libros'));
     }
 
+    public function updateForm($id_libro)
+    {
+        $session = session();
+        if(empty($session->get('user'))){
+            return redirect()->to(base_url('admin/libros'));
+        }
+        helper('form');
+
+        if($id_libro == null) {
+            throw new PageNotFoundException('El id no es correcto');
+        }
+
+        $libros_model = model(LibrosModel::class);
+
+
+
+        if($libros_model->where('id_libro',$id_libro)->find()){
+            $data = [
+                'libros' => $libros_model->where(['id_libro' => $id_libro])->first(),
+                'title' => 'Update Book',
+            ];
+        }else {
+            throw new PageNotFoundException('Book not found');
+        }
+        return view('templates/header',$data)
+            . view('backend/libros/update')
+            . view('templates/footer');
+
+    }
+
+    public function updateBook($id_libro)
+    {
+        helper('form');
+
+        if(empty($_FILES['image']['name'])){
+            // Mantener imagen de la base de datos
+
+            $data = $this->request->getPost(['titulo', 'autor', 'img_libro', 'precio']);
+
+            // Checks whether the submitted data passed the validation rules.
+            if (! $this->validateData($data, [
+                'titulo' => 'required|max_length[60]|min_length[3]',
+                'autor'  => 'required|max_length[60]|min_length[2]',
+                'img_libro' => 'max_length[80]|min_length[1]',
+                'precio'  => 'required',
+            ])) {
+                // The validation fails, so returns the form.
+                return $this->updateForm($id_libro);
+            }
+
+            $libros_model = model(LibrosModel::class);
+            // Gets the validated data.
+            $post = $this->validator->getValidated();
+
+            $libros_model->save([
+                'id_libro' => $id_libro,
+                'titulo' => $post['titulo'],
+                'autor'  => $post['autor'],
+                'image' => $post['img_libro'],
+                'precio'  => $post['precio'],
+            ]);
+
+            return redirect()->to(base_url('admin/libros'));
+
+        }else {
+            // Si pulsamos el botón examinar (cargar img nueva)
+            $data = $this->request->getPost(['titulo', 'autor', 'img_portada', 'precio']);
+
+            // Checks whether the submitted data passed the validation rules.
+            if (! $this->validateData($data, [
+                'titulo' => 'required|max_length[60]|min_length[3]',
+                'autor'  => 'required|max_length[60]|min_length[2]',
+                'img_portada' => 'is_image[image]',
+                'precio'  => 'required',
+            ])) {
+                // The validation fails, so returns the form.
+                return $this->updateForm($id_libro);
+            }
+
+            // Gets the validated data.
+            $post = $this->validator->getValidated();
+
+            $libros_model = model(LibrosModel::class);
+
+            // Recoger archivo temporal
+            $file = $this->request->getFile('image');
+            // Obtenemos el nombre
+            $news_libro_image = $file->getName();
+            // Mover el archivo temporal a la ruta
+            $file->move(ROOTPATH.'public/assets/img/',$news_libro_image);
+
+            // Eliminamos la imagen anterior para subir la nueva
+            if($data['img_portada'] = $libros_model->where('id_libro',$id_libro)->findColumn('portada'))
+            {
+                unlink(ROOTPATH.'public/assets/img/'.$data['img_portada'][0]);
+            }
+
+            $libros_model->save([
+                'id_libro' => $id_libro,
+                'titulo' => $post['titulo'],
+                'autor'  => $post['autor'],
+                'portada' => $news_libro_image,
+                'precio'  => $post['precio'],
+            ]);
+
+            return redirect()->to(base_url('admin/libros'));
+        }
+    }
+
 }

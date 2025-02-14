@@ -18,7 +18,7 @@
                 Delete Book
             </a>
             &nbsp;
-            <a href="<?= base_url('admin/updateWonderForm/'.$libro_selected['id_libro'])?>">
+            <a href="<?= base_url('admin/updateBookForm/'.$libro_selected['id_libro'])?>">
                 Update Book
             </a>
             <?php
