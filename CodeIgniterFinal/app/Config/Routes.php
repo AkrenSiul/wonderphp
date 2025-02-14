@@ -59,5 +59,10 @@ $routes->group("admin", function ($routes) {
 
     // LIBROS BACKEND
     $routes->get('libros', [Libros::class, 'index/backend']);
+    $routes->get('libros/(:segment)', [Libros::class, 'show/backend']);
+
+    $routes->get('createBookForm', [Libros::class, 'createForm']);
+    $routes->post('createBook', [Libros::class, 'createBook']);
+    $routes->get('deleteBook/(:segment)', [Libros::class, 'delete']);
 });
 

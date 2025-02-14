@@ -206,6 +206,7 @@
                 <button id="menuToggle">&#9776;</button>
             </li>
             <li class="menu-item hidden"><a href="<?= base_url('/') ?>"><b>Wonders main</b></a>
+            <li class="menu-item hidden"><a href="<?= base_url('admin/libros') ?>"><b>Libros</b></a></li>
             <li class="menu-item hidden"><a href="<?= base_url('admin/wonders') ?>"><b>Wonders</b></a></li>
             <li class="menu-item hidden"><a href="<?= base_url('admin/facts') ?>"><b>Facts</b></a>
                 <?php $session = session();
